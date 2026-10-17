@@ -11,7 +11,7 @@ export default function Pillars() {
   return (
     <>
       <PageHero
-        image="/images/people.webp"
+        image="https://images.unsplash.com/photo-1739298061709-cfc57e6b620e?w=2000&q=80"
         kicker="Kuhl-Cher’s four pillars"
         lines={[<>Culture is the <em>umbrella</em> that</>, <>shapes everything else.</>]}
       />

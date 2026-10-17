@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "Gallery" };
 export default function Gallery() {
   return (
     <>
-      <PageHero image="/images/seminar.webp" kicker="Gallery" lines={[<>The work, <em>in the room</em>.</>]} />
+      <PageHero image="https://images.unsplash.com/photo-1754373695753-1069438691f8?w=2000&q=80" kicker="Gallery" lines={[<>The work, <em>in the room</em>.</>]} />
       <section className="section" style={{ paddingTop: "clamp(50px, 6vw, 80px)" }}>
         <div className="wrap"><GalleryGrid /></div>
       </section>

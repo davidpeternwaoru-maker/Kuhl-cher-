@@ -16,7 +16,7 @@ function Portrait({ initials }: { initials: string }) {
 export default function Team() {
   return (
     <>
-      <PageHero image="/images/team-meeting.webp" kicker="Our team" lines={[<>The people who name it <em>correctly</em>.</>]} />
+      <PageHero image="https://images.unsplash.com/photo-1739287088753-73a9b8b771bc?w=2000&q=80" kicker="Our team" lines={[<>The people who name it <em>correctly</em>.</>]} />
 
       <section className="section on-light">
         <div className="wrap person">

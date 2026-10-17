@@ -25,7 +25,7 @@ export const PILLARS = [
   {
     n: "01",
     name: "Process",
-    image: "/images/process.webp",
+    image: "https://images.unsplash.com/photo-1573167101669-476636b96cea?w=2000&q=80",
     tagline: "The operating rhythm of the business",
     short: "The operating rhythm of the business.",
     body: "How work gets done, decisions get made, and consistency is maintained as the organization grows. We help leaders design processes rigorous enough to scale, yet flexible enough to bend without breaking when circumstances shift.",
@@ -33,7 +33,7 @@ export const PILLARS = [
   {
     n: "02",
     name: "People",
-    image: "/images/people.webp",
+    image: "https://images.unsplash.com/photo-1739298061709-cfc57e6b620e?w=2000&q=80",
     tagline: "The individuals who carry culture forward",
     short: "The individuals who carry culture forward.",
     body: "The individuals who carry culture forward every day. How they’re hired, developed, led, and aligned around a shared purpose. We help founders and executives build teams that don’t just execute strategy, but embody the culture, especially when things get hard.",
@@ -49,7 +49,7 @@ export const PILLARS = [
   {
     n: "04",
     name: "Finance",
-    image: "/images/finance.webp",
+    image: "https://images.unsplash.com/photo-1730342754574-bb4a9aa8ad30?w=2000&q=80",
     tagline: "The discipline that buys you runway",
     short: "The discipline that buys you runway.",
     body: [
@@ -65,21 +65,21 @@ export const INTERVENTIONS = [
     id: "csi",
     tag: "2 days",
     name: "The C.S.I Course",
-    image: "/images/workshop.webp",
+    image: "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=2000&q=80",
     short: "Diagnose the culture you really have, align it with strategy, measure the impact.",
   },
   {
     id: "convergence",
     tag: "1 day",
     name: "The Convergence Seminar",
-    image: "/images/seminar.webp",
+    image: "https://images.unsplash.com/photo-1754373695753-1069438691f8?w=2000&q=80",
     short: "A real founder’s story of leading a business through disruption.",
   },
   {
     id: "advisory",
     tag: "12 months",
     name: "Culture Advisory",
-    image: "/images/advisory.webp",
+    image: "https://images.unsplash.com/photo-1739285452644-3a2c009112fe?w=2000&q=80",
     short: "From structured diagnosis to twelve months of performance tracking.",
   },
 ];
@@ -126,13 +126,13 @@ export type Post = {
 export const POSTS: Post[] = []; // The client will write the first posts herself.
 
 export const GALLERY = [
-  { src: "/images/seminar.webp", caption: "The Convergence Seminar", tall: true },
-  { src: "/images/workshop.webp", caption: "In session" },
-  { src: "/images/writing.webp", caption: "Working sessions" },
-  { src: "/images/process.webp", caption: "The C.S.I Course", tall: true },
-  { src: "/images/advisory.webp", caption: "Honest counsel" },
-  { src: "/images/people.webp", caption: "Leadership offsite", tall: true },
-  { src: "/images/team-meeting.webp", caption: "The room where it happens", tall: true },
+  { src: "https://images.unsplash.com/photo-1754373695753-1069438691f8?w=2000&q=80", caption: "The Convergence Seminar", tall: true },
+  { src: "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=2000&q=80", caption: "In session" },
+  { src: "https://images.unsplash.com/photo-1663743669853-2ac159c92445?w=2000&q=80", caption: "Working sessions" },
+  { src: "https://images.unsplash.com/photo-1573167101669-476636b96cea?w=2000&q=80", caption: "The C.S.I Course", tall: true },
+  { src: "https://images.unsplash.com/photo-1739285452644-3a2c009112fe?w=2000&q=80", caption: "Honest counsel" },
+  { src: "https://images.unsplash.com/photo-1739298061709-cfc57e6b620e?w=2000&q=80", caption: "Leadership offsite", tall: true },
+  { src: "https://images.unsplash.com/photo-1739287088753-73a9b8b771bc?w=2000&q=80", caption: "The room where it happens", tall: true },
   { src: "/images/office.webp", caption: "Culture, operational" },
-  { src: "/images/towers.webp", caption: "Lagos" },
+  { src: "/images/towers.webp", caption: "Built for the long term" },
 ];

@@ -27,7 +27,7 @@ export default function Interventions() {
   return (
     <>
       <PageHero
-        image="/images/workshop.webp"
+        image="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=2000&q=80"
         kicker="Our interventions"
         lines={[<>Three ways we make</>, <>culture <em>operational</em>.</>]}
       />
@@ -48,7 +48,7 @@ export default function Interventions() {
                   <Link href="/contact?topic=csi" className="btn btn-outline">Register interest</Link>
                 </div>
               </div>
-              <Media src="/images/workshop.webp" alt="Facilitator leading a workshop" height="clamp(300px, 32vw, 460px)" radius={20} />
+              <Media src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=2000&q=80" alt="Facilitator leading a workshop" height="clamp(300px, 32vw, 460px)" radius={20} />
             </div>
             <p className="body" style={{ maxWidth: 900 }}>
               Built for organizations ready to move beyond strategy documents that sit unread and cultures that exist only as slogans on a wall. Over two days, participants learn how to diagnose the actual culture operating inside their organization (not the one on paper), align that culture with strategic priorities, and translate both into measurable business impact.
@@ -79,7 +79,7 @@ export default function Interventions() {
         <div className="wrap">
           <Reveal className="dark-box" style={{ display: "flex", flexDirection: "column", gap: 30 }}>
             <div className="split">
-              <Media src="/images/seminar.webp" alt="Audience at a seminar" height="clamp(300px, 32vw, 440px)" radius={20} />
+              <Media src="https://images.unsplash.com/photo-1754373695753-1069438691f8?w=2000&q=80" alt="Audience at a seminar" height="clamp(300px, 32vw, 440px)" radius={20} />
               <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
                 <span className="pill dark">A one-day seminar for business owners and executives</span>
                 <Lines lines={["The Convergence Seminar"]} className="h2" />
@@ -118,7 +118,7 @@ export default function Interventions() {
                 <p className="body" style={{ fontSize: 16 }}>We work with founders and executives to move culture from a values poster to a functioning strategic asset. That means diagnosing what’s actually happening beneath the surface, not what leadership believes is happening, and building the structures across people, process, technology, and finance that make culture something the organization can rely on, especially when disruption hits.</p>
                 <div><Link href="/contact?topic=advisory" className="btn btn-dark">Start a conversation <Arrow /></Link></div>
               </div>
-              <Media src="/images/advisory.webp" alt="Advisory conversation" height="clamp(320px, 36vw, 520px)" radius={20} />
+              <Media src="https://images.unsplash.com/photo-1739285452644-3a2c009112fe?w=2000&q=80" alt="Advisory conversation" height="clamp(320px, 36vw, 520px)" radius={20} />
             </div>
             <span className="label">Our methodology</span>
             <div className="steps">

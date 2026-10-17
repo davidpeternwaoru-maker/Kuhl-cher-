@@ -8,7 +8,7 @@ export const metadata: Metadata = { title: "Notes on Culture" };
 export default function Blog() {
   return (
     <>
-      <PageHero image="/images/writing.webp" kicker="Notes on culture" lines={[<>Writing on culture, strategy,</>, <>and <em>resilience</em>.</>]} />
+      <PageHero image="https://images.unsplash.com/photo-1663743669853-2ac159c92445?w=2000&q=80" kicker="Notes on culture" lines={[<>Writing on culture, strategy,</>, <>and <em>resilience</em>.</>]} />
       <section className="section on-light" style={{ paddingTop: "clamp(50px, 6vw, 80px)" }}>
         <div className="wrap statement">
           <Reveal className="l"><span className="pill gold">Coming soon</span></Reveal>

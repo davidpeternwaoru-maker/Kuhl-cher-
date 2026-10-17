@@ -32,7 +32,7 @@ export default function About() {
             <Reveal delay={0.1}><p className="body">Kuhl-Cher was founded on that belief. We’re a boutique consulting firm that helps organizations build cultures strong enough to withstand disruption and sustain performance over the long term. Not as a nice-to-have, but as a core strategic asset.</p></Reveal>
             <Reveal delay={0.2}><p className="body">We work closely with founders and executives to embed culture into the architecture of how their organizations operate, think, and respond under pressure. The goal isn’t just to get through the unexpected. It’s to come through it stronger than before.</p></Reveal>
           </div>
-          <Media src="/images/team-meeting.webp" alt="Leadership team in a working session" height="clamp(360px, 38vw, 520px)" />
+          <Media src="https://images.unsplash.com/photo-1739287088753-73a9b8b771bc?w=2000&q=80" alt="Leadership team in a working session" height="clamp(360px, 38vw, 520px)" />
         </div>
       </section>
 
@@ -70,7 +70,7 @@ export default function About() {
       <section className="section">
         <div className="wrap">
           <Reveal className="band">
-            <div className="bg"><Media src="/images/advisory.webp" alt="" radius={0} sizes="100vw" /></div>
+            <div className="bg"><Media src="https://images.unsplash.com/photo-1739285452644-3a2c009112fe?w=2000&q=80" alt="" radius={0} sizes="100vw" /></div>
             <div className="shade" />
             <div className="c">
               <Lines lines={["Honest counsel over", "comfortable answers."]} />

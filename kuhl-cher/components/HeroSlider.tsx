@@ -11,7 +11,7 @@ const DURATION = 7000;
 
 const SLIDES = [
   {
-    image: "/images/hero-lagos.webp",
+    image: "https://images.unsplash.com/photo-1573164574511-73c773193279?w=2000&q=80",
     tab: "Kuhl-Cher",
     kicker: "Boutique culture consulting",
     lines: [<>Every business faces disruption.</>, <><em>Culture</em> shapes how it comes through.</>],
@@ -20,7 +20,7 @@ const SLIDES = [
     diagnostic: true,
   },
   {
-    image: "/images/workshop.webp",
+    image: "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=2000&q=80",
     tab: "The C.S.I Course",
     kicker: "A two-day intensive course",
     lines: [<>Strategy tells you where to go.</>, <><em>Culture</em> determines whether you get there.</>],
@@ -28,7 +28,7 @@ const SLIDES = [
     cta: { label: "Book this course", href: "/interventions#csi" },
   },
   {
-    image: "/images/seminar.webp",
+    image: "https://images.unsplash.com/photo-1754373695753-1069438691f8?w=2000&q=80",
     tab: "The Convergence Seminar",
     kicker: "A one-day seminar",
     lines: [<>A real founder. A real disruption.</>, <>The <em>culture</em> that carried them through.</>],
@@ -36,7 +36,7 @@ const SLIDES = [
     cta: { label: "Reserve a seat", href: "/interventions#convergence" },
   },
   {
-    image: "/images/team-meeting.webp",
+    image: "https://images.unsplash.com/photo-1739287088753-73a9b8b771bc?w=2000&q=80",
     tab: "Culture Advisory",
     kicker: "Ongoing advisory",
     lines: [<><em>Culture</em>, treated with the</>, <>rigour of your balance sheet.</>],

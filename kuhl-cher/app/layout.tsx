@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kuhl-Cher | Boutique Culture Consulting",
     description: "Every business faces disruption. Culture shapes how it responds, and whether it emerges stronger.",
-    images: ["/images/hero-lagos.webp"],
+    images: ["https://images.unsplash.com/photo-1573164574511-73c773193279?w=2000&q=80"],
   },
 };
 
