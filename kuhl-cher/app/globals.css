@@ -386,3 +386,29 @@ em { font-style: italic; color: var(--gold); }
 .band .bg .media { height: 100%; border-radius: 0; }
 
 @media (max-width: 520px) { .btn { white-space: normal; text-align: left; } }
+
+/* ---------- Modifications (Oct 2026) ---------- */
+.vm-title { font-family: var(--serif); font-size: clamp(34px, 3.6vw, 52px); line-height: 1.05; font-weight: 500; color: var(--ink); }
+.dark-box .vm-title, .vm-title.gold { color: var(--gold); }
+
+.consent { display: flex; gap: 12px; align-items: flex-start; font-size: 14px; line-height: 1.5; color: var(--muted); cursor: pointer; text-align: left; }
+.consent input { width: 18px; height: 18px; margin-top: 2px; flex: none; accent-color: var(--ink); }
+.consent a { color: var(--gold-deep); text-decoration: underline; text-underline-offset: 3px; }
+.consent.dark { color: rgba(251, 249, 245, 0.75); }
+.consent.dark a { color: var(--gold); }
+
+.cookie { position: fixed; left: 16px; bottom: 16px; z-index: 80; max-width: 440px; background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 18px 20px; display: flex; gap: 16px; align-items: center; box-shadow: 0 24px 60px -30px rgba(28, 25, 20, 0.45); }
+.cookie p { font-size: 14px; line-height: 1.5; color: var(--muted); margin: 0; }
+.cookie a { color: var(--gold-deep); text-decoration: underline; }
+.cookie .btn { padding: 10px 18px; font-size: 14px; flex: none; }
+@media (max-width: 520px) { .cookie { right: 16px; max-width: none; } }
+
+.legal { max-width: 780px; display: flex; flex-direction: column; gap: 16px; }
+.legal h2 { font-family: var(--serif); font-size: clamp(26px, 2.6vw, 34px); line-height: 1.15; margin-top: 28px; scroll-margin-top: 140px; }
+.legal p, .legal li { font-size: 17px; line-height: 1.7; color: var(--ink); }
+.legal ul { padding-left: 22px; display: flex; flex-direction: column; gap: 8px; }
+.legal a { color: var(--gold-deep); text-decoration: underline; text-underline-offset: 3px; }
+.legal .muted { color: var(--muted); font-size: 15px; }
+
+.footer .company { font-size: 13px; color: var(--muted); line-height: 1.6; }
+.footer .bottom a { text-decoration: underline; text-underline-offset: 3px; }

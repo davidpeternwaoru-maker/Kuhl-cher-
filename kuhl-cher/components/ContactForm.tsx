@@ -1,12 +1,13 @@
 "use client";
 import { useEffect, useState } from "react";
 import { Arrow } from "./Icons";
+import Consent from "./Consent";
 
 const TOPICS: Record<string, string> = {
   csi: "The C.S.I Course",
   convergence: "The Convergence Seminar",
   advisory: "Culture Advisory",
-  diagnostic: "The Culture Diagnostic",
+  diagnostic: "The Culture Resilience Index (CRI)",
 };
 
 export default function ContactForm() {
@@ -45,6 +46,7 @@ export default function ContactForm() {
         </select>
       </div>
       <div className="field full"><label htmlFor="c-msg">Message</label><textarea id="c-msg" name="message" placeholder="Tell us where your organization feels the strain." /></div>
+      <div className="full"><Consent id="c-consent" text="I agree to Kuhl-Cher using these details to reply to my enquiry." /></div>
       <div className="full"><button className="btn btn-dark" type="submit">Send message <Arrow /></button></div>
     </form>
   );

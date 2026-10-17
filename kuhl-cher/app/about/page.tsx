@@ -13,24 +13,24 @@ export default function About() {
       <PageHero
         image="/images/towers.webp"
         kicker="About Kuhl-Cher"
-        lines={[<>What separates the companies</>, <>that adapt from the ones that</>, <><em>collapse</em>.</>]}
+        lines={[<>Culture decides how a business</>, <>responds to disruption, and</>, <>whether it emerges <em>stronger</em>.</>]}
       />
 
       <section className="section on-light">
         <div className="wrap statement">
           <Reveal className="l"><span className="label">Our story</span></Reveal>
           <div className="r">
-            <Lines lines={[<>It usually isn’t their strategy document.</>, <em key="c">It’s their culture.</em>]} />
+            <Lines lines={[<>It isn’t the strategy.</>, <em key="c">It’s the culture.</em>]} />
           </div>
         </div>
       </section>
 
       <section className="section" style={{ paddingTop: "clamp(50px, 6vw, 80px)" }}>
         <div className="wrap split">
-          <div>
-            <Reveal><p className="body">Every business eventually faces disruption; a market shift, a new competitor, a technological shock, a crisis nobody saw coming. What separates the companies that adapt from the ones that collapse usually isn’t their strategy document. It’s their culture.</p></Reveal>
+          <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
+            <Reveal><p className="body">Every business eventually faces disruption. A market shift, a new competitor, a technological shock, a crisis no one saw coming. What determines how a company responds, and whether it emerges stronger, is not its strategy. It is its culture.</p></Reveal>
             <Reveal delay={0.1}><p className="body">Kuhl-Cher was founded on that belief. We’re a boutique consulting firm that helps organizations build cultures strong enough to withstand disruption and sustain performance over the long term. Not as a nice-to-have, but as a core strategic asset.</p></Reveal>
-            <Reveal delay={0.2}><p className="body">We work closely with founders and executives to embed culture into the architecture of how their organizations operate, think, and respond under pressure. The goal isn’t just to survive the unexpected. It’s to come through it stronger than before.</p></Reveal>
+            <Reveal delay={0.2}><p className="body">We work closely with founders and executives to embed culture into the architecture of how their organizations operate, think, and respond under pressure. The goal isn’t just to get through the unexpected. It’s to come through it stronger than before.</p></Reveal>
           </div>
           <Media src="/images/team-meeting.webp" alt="Leadership team in a working session" height="clamp(360px, 38vw, 520px)" />
         </div>
@@ -39,11 +39,11 @@ export default function About() {
       <section className="section">
         <div className="wrap two">
           <Reveal className="dark-box vm" style={{ display: "flex", flexDirection: "column", gap: 18 }}>
-            <span className="label gold">Our vision</span>
-            <p>A consulting firm set up to structure and restructure small, medium, and large enterprises, to prepare them with insights and access to resources that will make them <em>disruption proof</em>.</p>
+            <h2 className="vm-title gold">Our Vision</h2>
+            <p>A consulting firm set up to structure and restructure small, medium, and large enterprises, to prepare them with insights and access to resources to navigate disruption, and <em>emerge stronger</em>.</p>
           </Reveal>
           <Reveal className="sand-box vm" delay={0.12} style={{ display: "flex", flexDirection: "column", gap: 18 }}>
-            <span className="label">Our mission</span>
+            <h2 className="vm-title">Our Mission</h2>
             <p>We help ensure business continuity amid disruptions in the global and local socio-political and economic environment.</p>
           </Reveal>
         </div>

@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { Reveal } from "./Motion";
 import { Arrow } from "./Icons";
+import Consent from "./Consent";
+import { COMPANY, CONTACT } from "@/lib/content";
 
 export default function Footer() {
   const [sub, setSub] = useState(false);
@@ -23,6 +25,7 @@ export default function Footer() {
             <Link href="/blog">Blog</Link>
             <Link href="/gallery">Gallery</Link>
             <Link href="/contact">Contact</Link>
+            <Link href="/privacy">Privacy Policy</Link>
           </Reveal>
           <Reveal className="col" delay={0.2}>
             <span className="label">Notes on culture</span>
@@ -30,10 +33,13 @@ export default function Footer() {
             {sub ? (
               <span style={{ fontWeight: 600, color: "var(--gold-deep)" }}>Thank you. You’re subscribed.</span>
             ) : (
-              <form className="subscribe" onSubmit={(e) => { e.preventDefault(); setSub(true); }}>
-                <label htmlFor="sub-email" className="sr-only">Email</label>
-                <input id="sub-email" type="email" required placeholder="Your email" autoComplete="email" />
-                <button type="submit">Subscribe</button>
+              <form style={{ display: "flex", flexDirection: "column", gap: 12 }} onSubmit={(e) => { e.preventDefault(); setSub(true); }}>
+                <div className="subscribe">
+                  <label htmlFor="sub-email" className="sr-only">Email</label>
+                  <input id="sub-email" type="email" required placeholder="Your email" autoComplete="email" />
+                  <button type="submit">Subscribe</button>
+                </div>
+                <Consent id="sub-consent" text="I agree to receive occasional emails from Kuhl-Cher. I can unsubscribe at any time." />
               </form>
             )}
           </Reveal>
@@ -42,7 +48,12 @@ export default function Footer() {
           <div className="wordmark" aria-hidden="true">Kuhl-Cher</div>
         </Reveal>
         <div className="bottom">
-          <span>© {new Date().getFullYear()} Kuhl-Cher. All rights reserved.</span>
+          <span className="company">
+            © {new Date().getFullYear()} {COMPANY.legalName || "Kuhl-Cher"}. All rights reserved.
+            {COMPANY.rc && <> · {COMPANY.rc}</>}
+            <br />
+            {COMPANY.address || CONTACT.location} · <Link href="/privacy">Privacy &amp; cookies</Link>
+          </span>
           <i>It’s how you say culture.</i>
         </div>
       </div>

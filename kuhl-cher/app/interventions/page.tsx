@@ -10,7 +10,7 @@ export const metadata: Metadata = { title: "Interventions" };
 
 const TAKES = [
   "An honest, unscripted conversation with the featured founder about what didn’t work at first and what the company did differently.",
-  "A first-hand account of how the founder’s organization used culture to survive real disruption. Not a theoretical framework, a lived case study.",
+  "A first-hand account of how the founder’s organization used culture to navigate real disruption. Not a theoretical framework, a lived case study.",
   "A working understanding of Kuhl-Cher’s four pillars (Process, People, Technology, and Finance) and how we turn culture from a value statement into something operational.",
   "A personal diagnostic of whether your own organization’s culture is already an asset, or quietly a liability.",
   "A well-documented action plan for immediate execution. Not a binder you shelve.",
@@ -42,7 +42,7 @@ export default function Interventions() {
               <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
                 <span className="pill" style={{ background: "var(--cream)" }}>A two-day intensive course for organizations</span>
                 <Lines lines={["The Culture, Strategy, and Impact (C.S.I) Course"]} className="h2" />
-                <p className="lead">Strategy tells you where to go. Culture determines whether you get there, and whether the organization survives what happens along the way.</p>
+                <p className="lead">Strategy tells you where to go. Culture determines whether you get there, and how the organization handles what happens along the way.</p>
                 <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
                   <Link href="/contact?topic=csi" className="btn btn-dark">Book this course <Arrow /></Link>
                   <Link href="/contact?topic=csi" className="btn btn-outline">Register interest</Link>
@@ -83,7 +83,7 @@ export default function Interventions() {
               <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
                 <span className="pill dark">A one-day seminar for business owners and executives</span>
                 <Lines lines={["The Convergence Seminar"]} className="h2" />
-                <p className="lead" style={{ color: "rgba(251,249,245,.86)" }}>Every organization eventually faces a moment that threatens to break it — a market collapse, a lost anchor client, a crisis no strategy document accounted for. Some don’t survive it. Others come through stronger than before.</p>
+                <p className="lead" style={{ color: "rgba(251,249,245,.86)" }}>Every organization eventually faces a moment that tests it: a market shift, a lost anchor client, a crisis no strategy document accounted for. Some struggle to recover. Others come through stronger than before.</p>
                 <p style={{ fontSize: 16, lineHeight: 1.7, color: "rgba(251,249,245,.72)" }}>This seminar is built around the real story of one founder who did the latter, and used culture, not just strategy, as the mechanism that carried the organization through. You’ll hear that story firsthand, sit with what it actually took to make culture operational rather than aspirational, and leave with a concrete plan for your own organization.</p>
                 <div><Link href="/contact?topic=convergence" className="btn btn-gold">Reserve a seat <Arrow /></Link></div>
               </div>

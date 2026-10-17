@@ -14,7 +14,7 @@ const SLIDES = [
     image: "/images/hero-lagos.webp",
     tab: "Kuhl-Cher",
     kicker: "Boutique culture consulting",
-    lines: [<>Every business faces disruption.</>, <><em>Culture</em> decides who survives it.</>],
+    lines: [<>Every business faces disruption.</>, <><em>Culture</em> shapes how it comes through.</>],
     lead: "We help organizations build cultures strong enough to withstand disruption and sustain performance.",
     cta: { label: "Explore our approach", href: "/pillars" },
     diagnostic: true,

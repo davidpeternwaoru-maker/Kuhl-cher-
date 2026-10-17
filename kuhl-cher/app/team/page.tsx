@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
-import { Counter, Lines, Reveal } from "@/components/Motion";
-import { STATS } from "@/lib/content";
+import { Lines, Reveal } from "@/components/Motion";
 
 export const metadata: Metadata = { title: "Our Team" };
 
@@ -42,7 +41,7 @@ export default function Team() {
               <p className="body" style={{ fontSize: 16 }}>Using a structured diagnostic across people, process, technology, and finance to identify where culture is already a strategic asset and where it’s quietly undermining performance.</p>
             </Reveal>
             <Reveal className="sand-box" delay={0.1} style={{ padding: 32, display: "flex", flexDirection: "column", gap: 10 }}>
-              <h3 style={{ fontSize: 26 }}>Build culture that survives disruption</h3>
+              <h3 style={{ fontSize: 26 }}>Build culture that holds up under disruption</h3>
               <p className="body" style={{ fontSize: 16 }}>Working directly with leadership teams to embed the specific structures, governance, incentives, decision rights, and financial discipline that make culture operational rather than aspirational.</p>
             </Reveal>
           </div>
@@ -51,7 +50,7 @@ export default function Team() {
 
       <section className="section">
         <div className="wrap person rev">
-          <Portrait initials="POA" />
+          <Portrait initials="PA" />
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             <Reveal><span className="pill">Partner, Kuhl-Cher</span></Reveal>
             <Lines lines={["Precious Olaoluwa Adedeji"]} />
@@ -59,25 +58,22 @@ export default function Team() {
               <p className="intro">A management and business development consultant with a proven track record of helping organizations, donor-backed projects, and growth-stage SMEs design scalable business models, access funding, and build internal systems that work.</p>
             </Reveal>
             <Reveal delay={0.15}>
-              <p className="body" style={{ fontSize: 16 }}>Through collaborations with innovation hubs, development programmes, and private-sector clients, POA has designed interventions supporting thousands of entrepreneurs, facilitating millions in local business funding, and securing over $10 million in cumulative client fundraising.</p>
+              <p className="body" style={{ fontSize: 16 }}>Through collaborations with innovation hubs, development programmes, and private-sector clients, Olaolu has designed interventions that help entrepreneurs and growing businesses sharpen their models, prepare for investment, and build the systems that let them scale.</p>
             </Reveal>
           </div>
         </div>
       </section>
 
       <section className="section">
-        <div className="wrap">
-          <Reveal className="dark-box" style={{ display: "flex", flexDirection: "column", gap: 36 }}>
-            <span className="label gold">Proven impact · the numbers</span>
-            <div className="stats">
-              {STATS.map((s, k) => (
-                <Reveal key={s.label} className="stat" delay={(k % 3) * 0.08}>
-                  <span className="v"><Counter value={s.value} prefix={s.prefix} suffix={s.suffix} /></span>
-                  <span className="l">{s.label}</span>
-                </Reveal>
-              ))}
-            </div>
-          </Reveal>
+        <div className="wrap person">
+          <Portrait initials="NO" />
+          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+            <Reveal><span className="pill">Kuhl-Cher</span></Reveal>
+            <Lines lines={["Nkem Ohen"]} />
+            <Reveal delay={0.1}>
+              <p className="intro">Full profile coming soon.</p>
+            </Reveal>
+          </div>
         </div>
       </section>
     </>

@@ -39,7 +39,7 @@ export default function Pillars() {
                 <Reveal><div className="num">{p.n}</div></Reveal>
                 <Lines as="h3" lines={[p.name]} />
                 <Reveal delay={0.1}><span className="pill">{p.tagline}</span></Reveal>
-                <Reveal delay={0.15}><p className="body" style={{ fontSize: 18 }}>{p.body}</p></Reveal>
+                <Reveal delay={0.15}>{(Array.isArray(p.body) ? p.body : [p.body]).map((t) => <p key={t} className="body" style={{ fontSize: 18, marginBottom: 14 }}>{t}</p>)}</Reveal>
               </div>
             </div>
           ))}

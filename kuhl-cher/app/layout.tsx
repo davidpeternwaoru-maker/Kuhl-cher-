@@ -9,6 +9,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
 import Transition from "@/components/Transition";
+import CookieNotice from "@/components/CookieNotice";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000"),
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     "Kuhl-Cher helps organizations build cultures strong enough to withstand disruption and sustain performance over the long term.",
   openGraph: {
     title: "Kuhl-Cher | Boutique Culture Consulting",
-    description: "Every business faces disruption. Culture decides who survives it.",
+    description: "Every business faces disruption. Culture shapes how it responds, and whether it emerges stronger.",
     images: ["/images/hero-lagos.webp"],
   },
 };
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Header />
             <main>{children}</main>
             <Footer />
+            <CookieNotice />
           </WaitlistProvider>
         </SmoothScroll>
       </body>

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Reveal } from "./Motion";
+import Consent from "./Consent";
 
 export default function NewsletterBox() {
   const [done, setDone] = useState(false);
@@ -13,10 +14,13 @@ export default function NewsletterBox() {
       {done ? (
         <div className="success">Thank you. You’re subscribed.</div>
       ) : (
-        <form className="subscribe" style={{ padding: 6 }} onSubmit={(e) => { e.preventDefault(); setDone(true); }}>
-          <label htmlFor="nl-email" className="sr-only">Email</label>
-          <input id="nl-email" type="email" required placeholder="Your email" style={{ fontSize: 16, padding: "14px 18px" }} />
-          <button type="submit" style={{ padding: "14px 24px", fontSize: 16 }}>Subscribe</button>
+        <form style={{ display: "flex", flexDirection: "column", gap: 14 }} onSubmit={(e) => { e.preventDefault(); setDone(true); }}>
+          <div className="subscribe" style={{ padding: 6 }}>
+            <label htmlFor="nl-email" className="sr-only">Email</label>
+            <input id="nl-email" type="email" required placeholder="Your email" style={{ fontSize: 16, padding: "14px 18px" }} />
+            <button type="submit" style={{ padding: "14px 24px", fontSize: 16 }}>Subscribe</button>
+          </div>
+          <Consent id="nl-consent" text="I agree to receive occasional emails from Kuhl-Cher. I can unsubscribe at any time." />
         </form>
       )}
     </Reveal>

@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { createContext, useContext, useEffect, useState } from "react";
 import { useLenis } from "./SmoothScroll";
 import { Arrow } from "./Icons";
+import Consent from "./Consent";
 
 const Ctx = createContext<() => void>(() => {});
 export const useWaitlist = () => useContext(Ctx);
@@ -53,10 +54,10 @@ export default function WaitlistProvider({ children }: { children: React.ReactNo
             >
               <button className="x" aria-label="Close" onClick={() => setOpen(false)}>×</button>
               <span className="pill gold">Coming soon</span>
-              <h3 id="wl-title">The Kuhl-Cher Culture Diagnostic</h3>
+              <h3 id="wl-title">The Culture Resilience Index (CRI)</h3>
               <p className="body">
-                See whether your culture is a source of resilience, or a hidden vulnerability. Assess your culture in
-                minutes, across the four pillars. The diagnostic is in final preparation. Join the waitlist to be first in.
+                A short, free assessment of how ready your culture is for disruption, and whether it is a source of
+                resilience or a hidden vulnerability. It is in final preparation. Join the waitlist to be first in.
               </p>
               {done ? (
                 <div className="success">You’re on the list. We’ll let you know the moment it opens.</div>
@@ -77,6 +78,7 @@ export default function WaitlistProvider({ children }: { children: React.ReactNo
                     <label htmlFor="wl-email">Email *</label>
                     <input id="wl-email" name="email" type="email" required autoComplete="email" />
                   </div>
+                  <Consent id="wl-consent" text="I agree to Kuhl-Cher emailing me when the CRI opens." />
                   <div>
                     <button className="btn btn-dark" type="submit">Join the waitlist <Arrow /></button>
                   </div>

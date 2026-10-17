@@ -1,9 +1,9 @@
 import Link from "next/link";
 import HeroSlider from "@/components/HeroSlider";
-import { Counter, Lines, Media, Reveal } from "@/components/Motion";
+import { Lines, Media, Reveal } from "@/components/Motion";
 import { Arrow } from "@/components/Icons";
 import { WaitlistButton } from "@/components/Waitlist";
-import { INTERVENTIONS, PILLARS, STATS } from "@/lib/content";
+import { INTERVENTIONS, PILLARS } from "@/lib/content";
 
 export default function Home() {
   return (
@@ -17,9 +17,9 @@ export default function Home() {
           <div className="r">
             <Lines
               lines={[
-                <>What separates the companies that adapt</>,
-                <>from the ones that collapse usually isn’t</>,
-                <>their strategy. <em>It’s their culture.</em></>,
+                <>What decides how a company responds</>,
+                <>to disruption, and whether it emerges</>,
+                <>stronger, isn’t its strategy. <em>It’s its culture.</em></>,
               ]}
             />
             <Reveal delay={0.2}>
@@ -80,23 +80,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Impact */}
-      <section className="section">
-        <div className="wrap">
-          <div className="head-row">
-            <Lines lines={["Proven impact"]} className="h2-sm" />
-            <Reveal delay={0.1}><p>The numbers behind the work.</p></Reveal>
-          </div>
-          <div className="stats">
-            {STATS.map((s, k) => (
-              <Reveal key={s.label} className="stat" delay={(k % 3) * 0.08}>
-                <span className="v"><Counter value={s.value} prefix={s.prefix} suffix={s.suffix} /></span>
-                <span className="l">{s.label}</span>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Diagnostic */}
       <section className="section" style={{ paddingTop: "clamp(80px, 9vw, 120px)" }}>
@@ -107,7 +90,7 @@ export default function Home() {
             <div className="c">
               <span className="pill gold">Coming soon</span>
               <Lines lines={[<>Is your culture a source of resilience, or a hidden <em>vulnerability</em>?</>]} />
-              <p>The Kuhl-Cher Culture Diagnostic. Assess your culture in minutes, across the four pillars.</p>
+              <p>The Culture Resilience Index (CRI). A short, free assessment of how ready your culture is for disruption.</p>
               <div><WaitlistButton className="btn btn-light">Join the waitlist <Arrow /></WaitlistButton></div>
             </div>
           </Reveal>

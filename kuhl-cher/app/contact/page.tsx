@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import ContactForm from "@/components/ContactForm";
 import { Lines, Reveal } from "@/components/Motion";
-import { CONTACT } from "@/lib/content";
+import { COMPANY, CONTACT } from "@/lib/content";
 
 export const metadata: Metadata = { title: "Contact" };
 
@@ -10,7 +10,8 @@ export default function Contact() {
   const items = [
     { k: "Email", v: <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a> },
     ...(CONTACT.phone ? [{ k: "Phone", v: <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`}>{CONTACT.phone}</a> }] : []),
-    { k: "Location", v: CONTACT.location },
+    { k: "Office", v: COMPANY.address || CONTACT.location },
+    ...(COMPANY.legalName ? [{ k: "Company", v: <>{COMPANY.legalName}{COMPANY.rc && <><br />{COMPANY.rc}</>}</> }] : []),
   ];
   return (
     <>
